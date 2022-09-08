@@ -152,5 +152,10 @@ session_start();
       </div>
     </div>
     </form> 
+    <?php 
+    echo '<script type="text/javascript">';
+    echo 'alert("Indent Successfully Submitted")';
+    echo '</script>';
+    ?>
 </body>
 </html>
