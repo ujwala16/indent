@@ -17,7 +17,7 @@
           
         if($count == 1){  
             $_SESSION['username'] = $username ;
-            header('Location: 2page.php');
+            header('Location:2page.php');
               
         }  
         else{  

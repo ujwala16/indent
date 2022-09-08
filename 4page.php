@@ -1,6 +1,6 @@
 <?php
 include("database.php");
-include("insert-script.php");
+include("details-insert.php");
 session_start();
 ?>
 <html>
@@ -64,34 +64,31 @@ session_start();
 <form action="" method="post">
 <label for="lang"style="color:#663ef9"><b>Institute:</b></label>
 <select name="Institute"> 
-<option value="SELECT">SELECT</option>
 <option value="VIIT">VIIT</option> 
 <option value="VIEW">VIEW</option> 
 <option value="VIPT">VIPT</option> 
-<option value="VVL DVD">VVL DVD</option> 
-<option value="VVL TMP">VVL TMP</option> 
-<option value="TRANSPORT">TRANSPORT</option> 
+<option value="VVLDVD">VVL DVD</option> 
+<option value="VVLTMP">VVL TMP</option>
 </select> 
       </div>
       <div class="two">
       <label for="lang"style="color:#663ef9"><b>Category:</b></label> 
    <select name="Category"> 
-    <option value="SELECT">SELECT</option>
-    <option value="Electrical">Electrical</option>
-    <option value="Carpentry">Carpentry</option> 
-    <option value="Hardware">Hardware</option> 
-    <option value="Software">Software</option> 
-    <option value="Plumbing">Plumbing</option> 
-    <option value="Civil">Civil</option> 
+    <option value="ELE">Electrical</option>
+    <option value="CAR">Carpentry</option> 
+    <option value="HAR">Hardware</option> 
+    <option value="SOF">Software</option> 
+    <option value="PLB">Plumbing</option> 
+    <option value="CIV">Civil</option> 
+    <option value="TRAN">TRANSPORT</option> 
     </select>  
       </div>
       <div class="three">
       <label for="lang"style="color:#663ef9"><b>Type:</b></label>
     <select name="Type"> 
-    <option value="SELECT">SELECT</option>
-    <option value="New">New</option> 
-    <option value="Repair">Repair</option> 
-    <option value="Removal">Removal</option>  
+    <option value="N">New</option> 
+    <option value="R">Repair</option> 
+    <option value="RE">Removal</option>  
     </select>  
       </div>
       </div>
