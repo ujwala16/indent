@@ -1,4 +1,6 @@
 <?php
+include("database.php");
+include("content-script.php");
 session_start();
 ?>
 <!DOCTYPE html>
@@ -7,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INDENT MANAGEMENT SYSTEM</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
@@ -48,15 +50,7 @@ session_start();
         padding: 10px 10px;
         margin-top:-20px;
     }
-    .button1{
-            
-            padding: 9px 25px;
-            margin-left:600px;
-           border-radius: 10px;
-            background-color: #4169a9;
-            margin-top: 80px;
-            color:#fff;
-    }  
+
     .a{
         margin-top: 50px;
         margin-left:120px;
@@ -92,7 +86,7 @@ session_start();
         </div>
 <body>
     <div class="head1">
-        <div class="a"> <h4>Institute:<?php echo($_SESSION['Institute'] ); ?> </h4></div> 
+        <div class="a"> <h4>Institute: <?php echo($_SESSION['Institute'] );?> </h4></div>
         <div class="b"><h4> Category:<?php echo($_SESSION['Category'] ); ?> </h4></div> 
         <div class="c"><h4>Type:<?php echo($_SESSION['Type'] ); ?> </h4></div>
     </div>
@@ -115,13 +109,7 @@ session_start();
                 <div class="mb-2 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Room No: </label>
                     <div class="col-sm-10">
-                    <select name="Department" required> 
-                      <option value="CSE">CSE</option> 
-                      <option value="ECE">ECE</option> 
-                      <option value="EEE">EEE</option>  
-                      <option value="IT">IT</option> 
-                      <option value="MECH">MECH</option> 
-                </select>
+                      <input type="text" style=" padding:10px 10px;border-color: 1px  #4169a9;border-radius: 10px;" >
                     </div>
                 </div>
             </div>
@@ -129,7 +117,13 @@ session_start();
                 <div class="mb-2 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Department: </label>
                     <div class="col-sm-10">
-                        <input type="text" style="padding:10px 10px;border-color:1px  #4169a9;border-radius: 10px;" >
+                    <select name="Department" required> 
+                      <option value="CSE">CSE</option> 
+                      <option value="ECE">ECE</option> 
+                      <option value="EEE">EEE</option>  
+                      <option value="IT">IT</option> 
+                      <option value="MECH">MECH</option> 
+                </select>
                     </div>
                 </div>
             </div>
@@ -149,9 +143,7 @@ session_start();
                   <div class="col-sm-10">
                     <input type="text" style="padding:120px 60px;margin-top:-50px; margin-left: 150px; border-radius: 15px; border-color: 1px  #4169a9;padding-left:350px;" >
                   </div>
-                  <div class="button">
-                    <button class="button button1" type="submit">SUMBIT</button>
-                    </div>
+                  <input type="submit" name="submit" style="background-color:#663ef9; color:#fff;border-radius:10px;margin-top:50px;margin-left:400px;padding:10px 10px">
                 </div>
                 </div>
           </div>
