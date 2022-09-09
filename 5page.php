@@ -140,8 +140,8 @@ session_start();
             <div class="block5">
                 <div class="mb-3 row">
                   <label for="inputPassword" class="col-sm-2 col-form-label " style="margin-left:40px; margin-top:80px;">Description: </label>
-                  <div class="col-sm-10">
-                    <input type="text" name="Description" style="padding:120px 60px;margin-top:-50px; margin-left: 150px; border-radius: 15px; border-color: 1px  #4169a9;padding-left:350px;" required>
+                  <div>
+                  <textarea id="w3review" name="w3review" rows="8" cols="50">Enter Description Here</textarea>
                     <input type="submit" name="submit" style="background-color:#663ef9; color:#fff;border-radius:10px;padding:10px 10px;margin-top: 350px;margin-left:1200px">
                   </div>
 
@@ -152,10 +152,5 @@ session_start();
       </div>
     </div>
     </form> 
-    <?php 
-    echo '<script type="text/javascript">';
-    echo 'alert("Indent Successfully Submitted")';
-    echo '</script>';
-    ?>
 </body>
 </html>
