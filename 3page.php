@@ -57,8 +57,8 @@ h5{
 <h5>welcome <?php echo($_SESSION['username'] ); ?></h5>
 </div>
 <div class="button">
-<button class="button button1">MY INDENTS</BUTTON>
-<button class="button button2"input type="submit"onclick="window.location.href='4page.php';">RAISE AN INDENT</BUTTON>
+<button class="button button1" input type="submit" onclick="window.location.href='6page.php';">MY INDENTS</BUTTON>
+<button class="button button2" input type="submit" onclick="window.location.href='4page.php';">RAISE AN INDENT</BUTTON>
 </div>
 </body>
 </html>

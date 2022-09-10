@@ -102,7 +102,7 @@ h5{
             <div class="button">
 <div class="a">
 <button class="button button1" href="#" role="button">PROFILE</button>
-<button class="button button2"input type="submit"onclick="window.location.href='3page.php';">INDENTS</button>
+<button class="button button2"input type="submit" onclick="window.location.href='3page.php';">INDENTS</button>
 <button class="button button3" type="submit">PAYROLE</button>
 </div>
 <div class="b">
