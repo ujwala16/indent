@@ -98,7 +98,7 @@ session_start();
         <div class="b"><h4> Category:<?php echo($_SESSION['Category'] ); ?> </h4></div> 
         <div class="c"><h4>Type:<?php echo($_SESSION['Type'] ); ?> </h4></div>
     </div>
-    <form action="" method="post">
+    <form action="" method="post" id="user-indent">
     <div class="container text-center">
         <div class="row">
           <div class="col-6 col-sm-4">
@@ -141,7 +141,7 @@ session_start();
                 <div class="mb-3 row">
                   <label for="inputPassword" class="col-sm-2 col-form-label " style="margin-left:40px; margin-top:80px;">Description: </label>
                   <div>
-                  <textarea id="w3review" name="w3review" rows="8" cols="50">Enter Description Here</textarea>
+                  <textarea rows="4" cols="50" name="Description" form="user-indent"></textarea>
                     <input type="submit" name="submit" style="background-color:#663ef9; color:#fff;border-radius:10px;padding:10px 10px;margin-top: 350px;margin-left:1200px">
                   </div>
 
